@@ -1,17 +1,22 @@
 import styled from "@emotion/styled";
+import { React } from "react";
 
 export const MainStyle = styled.div`
+  background-color: #222;
   main {
-    background-color: #222;
-    padding: 0 0 130px 0;
+    position: relative;
+    z-index: 1;
     header {
+      display: inline-block;
       position: relative;
+      width: 100%;
       .text {
-        position: absolute;
+        position: relative;
         padding: 0 40px;
-        bottom: 38px;
+        padding: 330px 40px 38px;
+
         width: 100%;
-        z-index: 2;
+        z-index: 3;
         h1 {
           font-size: 30px;
           color: #fff;
@@ -30,23 +35,22 @@ export const MainStyle = styled.div`
       }
       .cover {
         position: absolute;
-        bottom: -1px;
+        width: 100%;
+        height: 518px;
+        bottom: 0px;
         left: 0px;
-        z-index: 1;
-        img {
-          width: 100%;
-        }
-      }
-      .bg {
-        z-index: 0;
-        img {
-          width: 100%;
-        }
+        z-index: 2;
+        background: linear-gradient(
+          180deg,
+          rgba(34, 34, 34, 0) 30%,
+          rgba(34, 34, 34, 0.8) 100%
+        );
       }
     }
 
     & > ul {
-      padding: 0 30px;
+      background-color: rgba(34, 34, 34, 0.8);
+      padding: 0 30px 130px;
       & > li {
         padding: 35px 9px;
         border-top: 1px dashed #4e4e4e;
@@ -62,13 +66,33 @@ export const MainStyle = styled.div`
           line-height: 2;
           text-align: left;
         }
+        & > .location {
+          display: flex;
+          .text {
+            color: #fff;
+            font-size: 12px;
+          }
+          button {
+            margin-left: auto;
+            width: 30px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: #4e4e4e;
+            color: #fff;
+            font-size: 9px;
+            border: 0px;
+          }
+        }
       }
     }
   }
+
   footer {
+    position: relative;
     background-color: #f2f2f2;
     text-align: center;
     padding: 50px 0 65px;
+    z-index: 1;
     .icon {
       & > img {
         width: 46px;
@@ -101,6 +125,30 @@ export const MainStyle = styled.div`
           letter-spacing: -0.3px;
         }
       }
+    }
+  }
+
+  .bg_image {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    .cover {
+      position: absolute;
+      width: 100%;
+      height: 518px;
+      bottom: -1px;
+      left: 0px;
+      z-index: 2;
+      background: linear-gradient(
+        180deg,
+        rgba(34, 34, 34, 0) 30%,
+        rgba(34, 34, 34, 100) 100%
+      );
+    }
+    & > img {
+      width: 100%;
+      height: 518px;
     }
   }
 `;

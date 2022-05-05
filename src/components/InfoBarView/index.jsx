@@ -4,15 +4,9 @@ import { InfoBarViewStyle } from "./style";
 const InforBarView = ({ icon, text, smallText }) => {
   return (
     <InfoBarViewStyle>
-      <button>
-        {/* <div className="icon">
-          <img src={icon} alt="info bar icon" />
-        </div>
-         */}
-        <img src={icon} alt="info bar icon" />
-        {text}
-        <span>{smallText}</span>
-      </button>
+      <img src={icon} alt="info bar icon" />
+      {text}
+      <span>{smallText}</span>
     </InfoBarViewStyle>
   );
 };

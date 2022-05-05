@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { MainStyle } from "./style";
 import main_img from "@images/main_img.png";
 import main_cover from "@images/main_cover.png";
 import InfoBarView from "@components/InfoBarView";
+import Thumbnail from "@components/Thumbnail";
 import call from "@images/ic_info_bar_call.png";
 import email from "@images/ic_info_bar_email.png";
 import homepage from "@images/ic_info_bar_homepage.png";
@@ -16,6 +17,14 @@ import youtube from "@images/ic_info_bar_youtube.png";
 import myqr from "@images/ic_myqr.png";
 
 const Main = () => {
+  const [location, setLocation] = useState(
+    "서울특별시 양천구 목동서로130 목동아파트",
+  );
+
+  const handleCopyLocation = async () => {
+    await navigator.clipboard.writeText(location);
+    alert("Copied To clipboard");
+  };
   return (
     <MainStyle>
       <main>
@@ -35,11 +44,11 @@ const Main = () => {
             </p>
           </div>
           <div className="cover">
-            <img src={main_cover} alt="main cover" />
+            {/* <img src={main_cover} alt="main cover" /> */}
           </div>
-          <div className="bg">
+          {/* <div className="bg">
             <img src={main_img} alt="main img" />
-          </div>
+          </div> */}
         </header>
         <ul>
           <li>
@@ -72,6 +81,17 @@ const Main = () => {
             <InfoBarView icon={twitter} text="Twitter" />
             <InfoBarView icon={youtube} text="Youtube" />
           </li>
+          <li>
+            <h2>사진보기</h2>
+            <Thumbnail />
+          </li>
+          <li>
+            <h2>위치보기</h2>
+            <div className="location">
+              <div className="text">{location}</div>
+              <button onClick={() => handleCopyLocation()}>복사</button>
+            </div>
+          </li>
         </ul>
       </main>
       <footer>
@@ -94,6 +114,10 @@ const Main = () => {
           </li>
         </ul>
       </footer>
+      <div className="bg_image">
+        <div className="cover"></div>
+        <img src={main_img} alt="main img" />
+      </div>
     </MainStyle>
   );
 };
