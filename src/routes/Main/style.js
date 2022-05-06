@@ -68,6 +68,7 @@ export const MainStyle = styled.div`
         }
         & > .location {
           display: flex;
+          flex-wrap: wrap;
           .text {
             color: #fff;
             font-size: 12px;
@@ -81,6 +82,42 @@ export const MainStyle = styled.div`
             color: #fff;
             font-size: 9px;
             border: 0px;
+          }
+          .map_wrap {
+            margin-top: 26px;
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            .default {
+              display: flex;
+              width: 100%;
+              height: 100%;
+              background-color: #393939;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              .text {
+                & > h2 {
+                  width: 100%;
+                  color: #fff;
+                  font-size: 13px;
+                  letter-spacing: -0.26px;
+                }
+                & > p {
+                  width: 100%;
+                  margin-top: 15px;
+                  color: #c0c0c0;
+                  font-size: 10px;
+                  line-height: 1.68;
+                  letter-spacing: -0.2px;
+                }
+              }
+            }
+            & > img {
+              width: 100%;
+            }
           }
         }
       }
