@@ -129,7 +129,7 @@ export const MainStyle = styled.div`
     text-align: center;
     padding: 50px 0 65px;
     z-index: 1;
-    .icon {
+    .footer_icon {
       & > img {
         width: 46px;
         height: 46px;
@@ -145,6 +145,7 @@ export const MainStyle = styled.div`
     }
     & > ul {
       margin-top: 45px;
+      width: 100%;
       padding: 0 30px;
       text-align: left;
       & > li {

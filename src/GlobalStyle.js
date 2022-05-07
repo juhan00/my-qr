@@ -14,6 +14,10 @@ import icInstagram from "@images/ic_info_instagram.png";
 import icFacebook from "@images/ic_info_facebook.png";
 import icTwitter from "@images/ic_info_twitter.png";
 import icYoutube from "@images/ic_info_youtube.png";
+import icApp from "@images/ic_info_app.png";
+import icSns from "@images/ic_info_sns.png";
+import icPicture from "@images/ic_info_picture.png";
+import icLocation from "@images/ic_info_location.png";
 
 const GlobalStyle = () => {
   return (
@@ -91,11 +95,11 @@ const GlobalStyle = () => {
           font-family: "Noto Sans KR", sans-serif;
         }
         body {
+          background-color: #f7f7f7;
           font-size: 14px;
           font-weight: 400;
         }
         a {
-          color: #fff;
           text-decoration: none;
           outline: none;
         }
@@ -111,7 +115,15 @@ const GlobalStyle = () => {
         input::placeholder {
           color: #ccc;
         }
-
+        input {
+          width: 100%;
+          height: 50px;
+          border: 0px;
+          border-radius: 10px;
+          font-size: 15px;
+          color: #000;
+          padding: 0 14px;
+        }
         .btn_wrap {
           display: flex;
           & > .btn {
@@ -122,6 +134,13 @@ const GlobalStyle = () => {
             height: 68px;
             font-size: 20px;
             letter-spacing: -0.4px;
+            border: 0px;
+            &.round {
+              height: 50px;
+              border-radius: 10px;
+              font-size: 16px;
+              letter-spacing: -0.32px;
+            }
             &.gray {
               color: #222;
               background-color: #eee;
@@ -198,6 +217,22 @@ const GlobalStyle = () => {
           }
           &.ic_youtube {
             background: url(${icYoutube});
+            background-size: 50px 50px;
+          }
+          &.ic_app {
+            background: url(${icApp});
+            background-size: 50px 50px;
+          }
+          &.ic_sns {
+            background: url(${icSns});
+            background-size: 50px 50px;
+          }
+          &.ic_picture {
+            background: url(${icPicture});
+            background-size: 50px 50px;
+          }
+          &.ic_location {
+            background: url(${icLocation});
             background-size: 50px 50px;
           }
         }

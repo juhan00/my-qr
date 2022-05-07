@@ -150,7 +150,7 @@ const Main = () => {
         </ul>
       </main>
       <footer>
-        <div className="icon">
+        <div className="footer_icon">
           <img src={myqr} alt="MyQR icon" />
           <p>MyQR</p>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { EditStyle } from "./style";
 import InfoBarEdit from "@components/InfoBarEdit";
+import SubHeader from "@components/SubHeader";
 import main_img from "@images/main_img.png";
 
 const initialState = {
@@ -82,12 +83,13 @@ const Edit = () => {
 
   return (
     <EditStyle>
-      <header>
+      <SubHeader title="QR정보 등록" />
+      {/* <header>
         <a href="#none" className="btn_back">
           뒤로
         </a>
         <h1>QR정보 등록</h1>
-      </header>
+      </header> */}
       <main>
         <div className="btn_wrap">
           <button className="active">정보등록</button>
@@ -255,8 +257,8 @@ const Edit = () => {
         </ul>
       </main>
       <div className="btn_wrap">
-        <div className="btn gray">미리보기</div>
-        <div className="btn blue">저장</div>
+        <button className="btn gray">미리보기</button>
+        <button className="btn blue">저장</button>
       </div>
     </EditStyle>
   );
