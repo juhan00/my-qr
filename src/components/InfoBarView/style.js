@@ -14,7 +14,7 @@ export const InfoBarViewStyle = styled.button`
   background-color: #393939;
   border: 0px;
   border-radius: 10px;
-  & > img {
+  & > .icon {
     position: absolute;
     top: 2px;
     left: 2px;
