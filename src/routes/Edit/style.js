@@ -3,7 +3,7 @@ import btnfileDel from "@images/ic_file_delete.png";
 
 export const EditStyle = styled.div`
   main {
-    .btn_wrap {
+    .top_btn_wrap {
       display: flex;
       justify-content: center;
       margin-top: 30px;
@@ -89,94 +89,53 @@ export const EditStyle = styled.div`
             & > li {
               border-top: 1px dashed #ddd;
               padding: 36px 0;
-              .title {
+            }
+            .file_load_wrap {
+              margin-top: 10px;
+              .file_load {
                 display: flex;
                 align-items: center;
-                margin-bottom: 30px;
-                & > h3 {
-                  font-size: 20px;
-                  font-weight: 700;
-                }
-                & > button {
-                  margin-left: auto;
-                }
-              }
-              & > input {
-                &:first-of-type {
-                  margin-top: 0px;
-                }
-                margin-top: 10px;
-                /* width: 100%;
+                justify-content: center;
+                margin-bottom: 18px;
+                width: 100%;
                 height: 50px;
-                border: 0px;
+                background-color: #eee;
                 border-radius: 10px;
-                font-size: 15px;
+                border: 0px;
+                font-size: 16px;
                 color: #000;
-                padding: 0 14px; */
+                & > input[type="file"] {
+                  display: none;
+                }
               }
-              .btn_wrap {
+              .file_name {
                 display: flex;
-                margin-top: 10px;
-                & > button {
-                  width: 100%;
-                  height: 50px;
-                  background-color: #eee;
-                  border-radius: 10px;
-                  border: 0px;
-                  font-size: 16px;
+                align-items: center;
+                padding: 0 10px;
+                & > h4 {
+                  font-size: 15px;
                   color: #000;
+                  width: calc(100% - 50px);
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
                 }
-                & > button + button {
-                  margin-left: 10px;
+                & > span {
+                  margin-left: auto;
+                  width: 30px;
+                  height: 30px;
+                  background: url(${btnfileDel}) 50% 50% no-repeat;
+                  background-size: 30px 30px;
+                  font-size: 0px;
                 }
               }
-              .file_load_wrap {
+              .file_name + .file_name {
                 margin-top: 10px;
-                .file_load {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-bottom: 18px;
-                  width: 100%;
-                  height: 50px;
-                  background-color: #eee;
-                  border-radius: 10px;
-                  border: 0px;
-                  font-size: 16px;
-                  color: #000;
-                  & > input[type="file"] {
-                    display: none;
-                  }
-                }
-                .file_name {
-                  display: flex;
-                  align-items: center;
-                  padding: 0 10px;
-                  & > h4 {
-                    font-size: 15px;
-                    color: #000;
-                    width: calc(100% - 50px);
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                  }
-                  & > span {
-                    margin-left: auto;
-                    width: 30px;
-                    height: 30px;
-                    background: url(${btnfileDel}) 50% 50% no-repeat;
-                    background-size: 30px 30px;
-                    font-size: 0px;
-                  }
-                }
-                .file_name + .file_name {
-                  margin-top: 10px;
-                }
               }
             }
-            & > li:last-of-type {
-              border-bottom: 1px dashed #ddd;
-            }
+          }
+          & > li:last-of-type {
+            border-bottom: 1px dashed #ddd;
           }
         }
       }

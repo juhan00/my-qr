@@ -53,9 +53,7 @@ export const MainStyle = styled.div`
       & > li {
         padding: 35px 9px;
         border-top: 1px dashed #4e4e4e;
-        &:last-of-type {
-          border-bottom: 1px dashed #4e4e4e;
-        }
+
         & > h2 {
           padding-left: 2px;
           margin-bottom: 20px;
@@ -65,6 +63,11 @@ export const MainStyle = styled.div`
           line-height: 2;
           text-align: left;
         }
+
+        &:last-of-type {
+          border-bottom: 1px dashed #4e4e4e;
+        }
+
         & > .location {
           display: flex;
           flex-wrap: wrap;
@@ -169,6 +172,7 @@ export const MainStyle = styled.div`
     position: fixed;
     top: 0px;
     left: 0px;
+    width: 100%;
     z-index: 0;
     .cover {
       position: absolute;

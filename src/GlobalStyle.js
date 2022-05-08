@@ -91,13 +91,12 @@ const GlobalStyle = () => {
             font-weight: 900;
             src: url(../public/font/Roboto-Black.ttf) format("ttf");
           }
-
-          font-family: "Noto Sans KR", sans-serif;
         }
         body {
           background-color: #f7f7f7;
           font-size: 14px;
           font-weight: 400;
+          font-family: "Noto Sans KR", sans-serif;
         }
         a {
           text-decoration: none;
