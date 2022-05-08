@@ -45,7 +45,7 @@ export const EditListStyle = styled.div`
     margin-top: 10px;
 
     .icon_wrap {
-      flex-grow: 0;
+      flex: 0;
       position: relative;
       .btn_edit {
         position: absolute;
@@ -55,9 +55,9 @@ export const EditListStyle = styled.div`
     }
 
     & > input {
-      flex: 1 1 auto;
+      flex: 1 0 auto;
       margin-left: 10px;
-      width: auto;
+      width: calc(100% - 120px);
       height: 50px;
       border: 0px;
       border-radius: 10px;
@@ -72,8 +72,7 @@ export const EditListStyle = styled.div`
     }
 
     .btn_safety {
-      flex-grow: 0;
-      margin-left: auto;
+      flex: 0;
       margin-left: 10px;
       min-width: 50px;
       width: 50px;

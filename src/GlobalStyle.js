@@ -33,7 +33,6 @@ const GlobalStyle = () => {
         }
         #root {
           background-color: #f7f7f7;
-          height: 100vh;
         }
         body {
           font-size: 14px;
