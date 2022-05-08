@@ -139,8 +139,8 @@ export const MainStyle = styled.div`
       }
       & > p {
         font-size: 23px;
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
-        font-family: "Roboto";
         color: #000;
         letter-spacing: 0.69px;
         margin-top: 10px;
