@@ -89,47 +89,80 @@ export const EditStyle = styled.div`
             & > li {
               border-top: 1px dashed #ddd;
               padding: 36px 0;
-            }
-            .file_load_wrap {
-              margin-top: 10px;
-              .file_load {
+
+              .title {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                margin-bottom: 18px;
-                width: 100%;
-                height: 50px;
-                background-color: #eee;
-                border-radius: 10px;
-                border: 0px;
-                font-size: 16px;
-                color: #000;
-                & > input[type="file"] {
-                  display: none;
+                margin-bottom: 30px;
+                & > h3 {
+                  font-size: 20px;
+                  font-weight: 700;
                 }
-              }
-              .file_name {
-                display: flex;
-                align-items: center;
-                padding: 0 10px;
-                & > h4 {
-                  font-size: 15px;
-                  color: #000;
-                  width: calc(100% - 50px);
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                }
-                & > span {
+                & > button {
                   margin-left: auto;
-                  width: 30px;
-                  height: 30px;
-                  background: url(${btnfileDel}) 50% 50% no-repeat;
-                  background-size: 30px 30px;
-                  font-size: 0px;
                 }
               }
-              .file_name + .file_name {
+              .file_load_wrap {
+                margin-top: 10px;
+                .file_load {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 18px;
+                  width: 100%;
+                  height: 50px;
+                  background-color: #eee;
+                  border-radius: 10px;
+                  border: 0px;
+                  font-size: 16px;
+                  color: #000;
+                  & > input[type="file"] {
+                    display: none;
+                  }
+                }
+                .file_name {
+                  display: flex;
+                  align-items: center;
+                  padding: 0 10px;
+                  & > h4 {
+                    font-size: 15px;
+                    color: #000;
+                    width: calc(100% - 50px);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+                  & > span {
+                    margin-left: auto;
+                    width: 30px;
+                    height: 30px;
+                    background: url(${btnfileDel}) 50% 50% no-repeat;
+                    background-size: 30px 30px;
+                    font-size: 0px;
+                  }
+                }
+                .file_name + .file_name {
+                  margin-top: 10px;
+                }
+              }
+              & > .btn_wrap {
+                display: flex;
+                margin-top: 10px;
+                & > button {
+                  width: 100%;
+                  height: 50px;
+                  background-color: #eee;
+                  border-radius: 10px;
+                  border: 0px;
+                  font-size: 16px;
+                  color: #000;
+                }
+                & > button + button {
+                  margin-left: 10px;
+                }
+              }
+
+              & > input + input {
                 margin-top: 10px;
               }
             }

@@ -192,6 +192,43 @@ const Edit = () => {
                     )}
                   </li>
                 ))}
+                <li>
+                  <div className="title">
+                    <h3>사진</h3>
+                    <button className="checkbox active">체크박스</button>
+                  </div>
+                  <input type="text" defaultValue="사진보기" />
+                  <div className="file_load_wrap">
+                    <label className="file_load">
+                      불러오기({imgFiles.length}/10)
+                      <input
+                        type="file"
+                        multiple
+                        onChange={(e) => onChange(e)}
+                      />
+                    </label>
+                    {imgFiles.map((file, index) => (
+                      <div className="file_name" key={index}>
+                        <h4>{file.name}</h4>
+                        <span onClick={() => removeFile(file)}>삭제</span>
+                      </div>
+                    ))}
+                  </div>
+                </li>
+                <li>
+                  <div className="title">
+                    <h3>위치(지도)</h3>
+                    <button className="checkbox active">체크박스</button>
+                  </div>
+                  <input type="text" defaultValue="위치보기" />
+                  <input
+                    type="text"
+                    placeholder="네이버지도 링크주소를 입력하세요"
+                  />
+                  <div className="btn_wrap">
+                    <button>추가</button>
+                  </div>
+                </li>
               </ul>
             </section>
           </li>
