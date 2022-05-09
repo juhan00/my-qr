@@ -1,16 +1,17 @@
 import React from "react";
 import { EditListStyle } from "./style";
 
-const EditList = ({ title, category, list }) => {
+const EditList = ({ category }) => {
   return (
     <EditListStyle>
-      <div className="title">
-        <h3>{title}</h3>
-        <button className="checkbox active">체크박스</button>
-      </div>
-      <input type="text" defaultValue="전화걸기" />
       {category === "call" ? (
         <>
+          <div className="title">
+            <h3>전화번호</h3>
+            <button className="checkbox active">체크박스</button>
+            {/* 활성화:active, 비활성화:active 제거 */}
+          </div>
+          <input type="text" defaultValue="전화걸기" />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -18,6 +19,7 @@ const EditList = ({ title, category, list }) => {
             </div>
             <input type="text" placeholder="전화번호를 입력하세요" />
             <button className="btn_safety acitve">안심번호</button>
+            {/* 활성화:active, 비활성화:active 제거 */}
           </div>
           <div className="btn_wrap">
             <button>추가</button>
@@ -25,6 +27,12 @@ const EditList = ({ title, category, list }) => {
         </>
       ) : category === "email" ? (
         <>
+          <div className="title">
+            <h3>이메일</h3>
+            <button className="checkbox active">체크박스</button>
+            {/* 활성화:active, 비활성화:active 제거 */}
+          </div>
+          <input type="text" defaultValue="이메일 보내기" />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -38,6 +46,12 @@ const EditList = ({ title, category, list }) => {
         </>
       ) : category === "homepage" ? (
         <>
+          <div className="title">
+            <h3>링크주소</h3>
+            <button className="checkbox active">체크박스</button>
+            {/* 활성화:active, 비활성화:active 제거 */}
+          </div>
+          <input type="text" defaultValue="홈페이지" />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -59,6 +73,12 @@ const EditList = ({ title, category, list }) => {
         </>
       ) : category === "app" ? (
         <>
+          <div className="title">
+            <h3>앱 다운로드</h3>
+            <button className="checkbox active">체크박스</button>
+            {/* 활성화:active, 비활성화:active 제거 */}
+          </div>
+          <input type="text" defaultValue="앱 다운로드" />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -74,6 +94,12 @@ const EditList = ({ title, category, list }) => {
       ) : (
         category === "sns" && (
           <>
+            <div className="title">
+              <h3>SNS</h3>
+              <button className="checkbox active">체크박스</button>
+              {/* 활성화:active, 비활성화:active 제거 */}
+            </div>
+            <input type="text" defaultValue="SNS 구경하기" />
             <div className="list_wrap">
               <div className="icon_wrap">
                 <button className="btn_edit">수정</button>

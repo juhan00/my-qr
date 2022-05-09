@@ -157,39 +157,7 @@ const Edit = () => {
               <ul>
                 {qrData.map((item) => (
                   <li key={item.index}>
-                    {item.category === "call" ? (
-                      <EditList
-                        title="전화번호"
-                        category={item.category}
-                        list={item.list}
-                      />
-                    ) : item.category === "email" ? (
-                      <EditList
-                        title="이메일"
-                        category={item.category}
-                        list={item.list}
-                      />
-                    ) : item.category === "homepage" ? (
-                      <EditList
-                        title="링크주소"
-                        category={item.category}
-                        list={item.list}
-                      />
-                    ) : item.category === "app" ? (
-                      <EditList
-                        title="앱 다운로드"
-                        category={item.category}
-                        list={item.list}
-                      />
-                    ) : (
-                      item.category === "sns" && (
-                        <EditList
-                          title="SNS"
-                          category={item.category}
-                          list={item.list}
-                        />
-                      )
-                    )}
+                    <EditList category={item.category} />
                   </li>
                 ))}
                 <li>

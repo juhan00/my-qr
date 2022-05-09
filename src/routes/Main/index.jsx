@@ -108,7 +108,7 @@ const Main = () => {
   const [mapData, setMapData] = useState(initialMapData);
 
   const handleCopyLocation = async () => {
-    await navigator.clipboard.writeText(state.map.location);
+    await navigator.clipboard.writeText(mapData.location);
     alert("Copied To clipboard");
   };
 
