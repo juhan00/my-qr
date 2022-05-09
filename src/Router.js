@@ -6,6 +6,7 @@ import Edit from "@routes/Edit";
 import Order from "@routes/Order";
 import Login from "@routes/Login";
 import Join from "@routes/Join";
+import Buyer from "@routes/Buyer";
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
       <Route path="/order" element={<Order />} />
       <Route path="/login" element={<Login />} />
       <Route path="/join" element={<Join />} />
+      <Route path="/buyer" element={<Buyer />} />
     </Routes>
   );
 };

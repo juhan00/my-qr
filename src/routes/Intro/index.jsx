@@ -21,6 +21,9 @@ const Intro = () => {
         <li>
           <NavLink to="/join">회원가입</NavLink>
         </li>
+        <li>
+          <NavLink to="/buyer">구매자 홈</NavLink>
+        </li>
       </ul>
     </IntroStyle>
   );

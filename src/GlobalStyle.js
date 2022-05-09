@@ -18,12 +18,15 @@ import icApp from "@images/ic_info_app.png";
 import icSns from "@images/ic_info_sns.png";
 import icPicture from "@images/ic_info_picture.png";
 import icLocation from "@images/ic_info_location.png";
+import btnNav from "@images/btn_nav.png";
 
 const GlobalStyle = () => {
   return (
     <Global
       styles={css`
         ${emotionReset}
+
+        // 공통설정
         *,
         *::after,
         *::before {
@@ -65,6 +68,32 @@ const GlobalStyle = () => {
           color: #000;
           padding: 0 14px;
         }
+        .checkbox {
+          width: 20px;
+          height: 20px;
+          border-radius: 3px;
+          background: url(${btnCheckboxOff}) 50% 50% no-repeat;
+          background-size: 20px 20px;
+          font-size: 0px;
+          border: 1px solid #ddd;
+          &.active {
+            background: url(${btnCheckboxOn}) 50% 50% no-repeat;
+            background-size: 20px 20px;
+            border: 1px solid #0aaf63;
+          }
+        }
+
+        // nav 버튼
+        .btn_nav {
+          width: 40px;
+          height: 40px;
+          background: url(${btnNav}) 50% 50% no-repeat;
+          background-size: 25.5px 19px;
+          font-size: 0px;
+          border: 0px;
+        }
+
+        // 버튼
         .btn_wrap {
           display: flex;
           & > .btn {
@@ -92,7 +121,7 @@ const GlobalStyle = () => {
             }
           }
         }
-
+        // 수정버튼
         .btn_edit {
           width: 25px;
           height: 25px;
@@ -102,21 +131,7 @@ const GlobalStyle = () => {
           font-size: 0px;
         }
 
-        .checkbox {
-          width: 20px;
-          height: 20px;
-          border-radius: 3px;
-          background: url(${btnCheckboxOff}) 50% 50% no-repeat;
-          background-size: 20px 20px;
-          font-size: 0px;
-          border: 1px solid #ddd;
-          &.active {
-            background: url(${btnCheckboxOn}) 50% 50% no-repeat;
-            background-size: 20px 20px;
-            border: 1px solid #0aaf63;
-          }
-        }
-
+        // 아이콘
         .icon {
           width: 50px;
           height: 50px;
@@ -178,6 +193,7 @@ const GlobalStyle = () => {
           }
         }
 
+        // PC버전
         @media screen and (min-width: 769px) {
           body {
             display: flex;
