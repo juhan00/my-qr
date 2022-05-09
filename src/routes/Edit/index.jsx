@@ -202,9 +202,9 @@ const Edit = () => {
           </li>
         </ul>
       </main>
-      <div className="btn_wrap">
+      <div className="btn_wrap fixed">
         <button className="btn gray">미리보기</button>
-        <button className="btn blue">저장</button>
+        <button className="btn green">저장</button>
       </div>
     </EditStyle>
   );

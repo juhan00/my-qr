@@ -115,9 +115,9 @@ const GlobalStyle = () => {
               color: #222;
               background-color: #eee;
             }
-            &.blue {
+            &.green {
               color: #fff;
-              background-color: #009ff2;
+              background-color: #25bcb3;
             }
           }
         }
@@ -207,6 +207,11 @@ const GlobalStyle = () => {
                 max-width: 400px;
                 left: 50%;
                 transform: translate(-50%);
+              }
+              .btn_wrap {
+                &.fixed {
+                  width: 400px;
+                }
               }
             }
           }

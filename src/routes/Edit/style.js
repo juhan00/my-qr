@@ -17,7 +17,7 @@ export const EditStyle = styled.div`
         color: #000;
         &.active {
           color: #fff;
-          background-color: #000;
+          background-color: #25bcb3;
         }
       }
       & > button + button {
@@ -56,7 +56,7 @@ export const EditStyle = styled.div`
     }
 
     & > ul {
-      padding: 50px 30px 130px;
+      padding: 50px 30px 268px;
       & > li {
         & > h2 {
           color: #222;
@@ -166,15 +166,24 @@ export const EditStyle = styled.div`
                 margin-top: 10px;
               }
             }
-          }
-          & > li:last-of-type {
-            border-bottom: 1px dashed #ddd;
+            & > li:last-of-type {
+              border-bottom: 1px dashed #ddd;
+            }
           }
         }
       }
       & > li + li {
         margin-top: 50px;
       }
+    }
+  }
+  & > .btn_wrap {
+    &.fixed {
+      z-index: 999;
+      position: fixed;
+      width: inherit;
+      max-width: inherit;
+      bottom: 0px;
     }
   }
 `;
