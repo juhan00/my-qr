@@ -15,7 +15,7 @@ const Login = () => {
         <input type="text" placeholder="비밀번호를 입력하세요" />
 
         <div className="btn_wrap">
-          <button className="btn round blue">로그인</button>
+          <button className="btn round green">로그인</button>
         </div>
 
         <div className="sub_btn_wrap">

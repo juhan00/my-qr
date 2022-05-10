@@ -57,7 +57,7 @@ export const EditStyle = styled.div`
     }
 
     & > ul {
-      padding: 50px 30px 268px;
+      padding: 50px 30px 262px;
       & > li {
         & > h2 {
           color: #222;

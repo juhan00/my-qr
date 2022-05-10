@@ -57,16 +57,16 @@ export const LoginStyle = styled.div`
       padding: 0 30px;
       text-align: left;
       & > li {
-        border-top: 1px dashed #c2c2c2;
+        border-top: 1px dashed #ddd;
         &:last-of-type {
-          border-bottom: 1px dashed #c2c2c2;
+          border-bottom: 1px dashed #ddd;
         }
         & > a {
           display: flex;
           align-items: center;
           height: 52px;
           font-size: 15px;
-          color: #000;
+          color: #666;
           letter-spacing: -0.3px;
         }
       }

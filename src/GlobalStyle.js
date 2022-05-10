@@ -107,10 +107,12 @@ const GlobalStyle = () => {
             align-items: center;
             justify-content: center;
             width: 100%;
-            height: 68px;
+            height: 62px;
             font-size: 20px;
+            font-weight: 700;
             letter-spacing: -0.4px;
             border: 0px;
+
             &.round {
               height: 50px;
               border-radius: 10px;
@@ -124,6 +126,11 @@ const GlobalStyle = () => {
             &.green {
               color: #fff;
               background-color: #25bcb3;
+            }
+            &.dim {
+              color: #fff;
+              font-weight: 400;
+              background-color: #ccc;
             }
           }
         }

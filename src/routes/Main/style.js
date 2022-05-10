@@ -52,7 +52,7 @@ export const MainStyle = styled.div`
       padding: 0 30px 130px;
       & > li {
         padding: 35px 9px;
-        border-top: 1px dashed #ddd;
+        border-top: 1px dashed #4e4e4e;
 
         & > h2 {
           padding-left: 2px;
@@ -65,7 +65,7 @@ export const MainStyle = styled.div`
         }
 
         &:last-of-type {
-          border-bottom: 1px dashed #ddd;
+          border-bottom: 1px dashed #4e4e4e;
         }
 
         & > .location {
@@ -129,7 +129,7 @@ export const MainStyle = styled.div`
 
   footer {
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     text-align: center;
     padding: 50px 0 65px;
     z-index: 1;
@@ -153,16 +153,16 @@ export const MainStyle = styled.div`
       padding: 0 30px;
       text-align: left;
       & > li {
-        border-top: 1px dashed #c2c2c2;
+        border-top: 1px dashed #ddd;
         &:last-of-type {
-          border-bottom: 1px dashed #c2c2c2;
+          border-bottom: 1px dashed #ddd;
         }
         & > a {
           display: flex;
           align-items: center;
           height: 58px;
           font-size: 15px;
-          color: #000;
+          color: #666;
           letter-spacing: -0.3px;
         }
       }

@@ -29,7 +29,7 @@ const Join = () => {
         </div>
 
         <div className="btn_wrap">
-          <button className="btn round blue">인증메일 발송</button>
+          <button className="btn round green">인증메일 발송</button>
         </div>
       </main>
     </JoinStyle>
