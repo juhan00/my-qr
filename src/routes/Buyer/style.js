@@ -203,12 +203,10 @@ export const BuyerStyle = styled.div`
   }
 
   footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 100px 0;
     & > ul {
       display: flex;
+      justify-content: center;
       align-items: center;
       & > li {
         & > a {
@@ -219,6 +217,7 @@ export const BuyerStyle = styled.div`
       }
     }
     .copyright {
+      flex-grow: 1;
       margin-top: 20px;
       font-size: 8px;
       color: #bbb;
@@ -226,6 +225,7 @@ export const BuyerStyle = styled.div`
     }
 
     .descript {
+      flex-grow: 1;
       margin-top: 25px;
       font-size: 10px;
       color: #999;
