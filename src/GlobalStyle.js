@@ -109,7 +109,7 @@ const GlobalStyle = () => {
             width: 100%;
             height: 62px;
             font-size: 20px;
-            font-weight: 700;
+            font-weight: 400;
             letter-spacing: -0.4px;
             border: 0px;
 
@@ -117,15 +117,18 @@ const GlobalStyle = () => {
               height: 50px;
               border-radius: 10px;
               font-size: 16px;
+              font-weight: 400;
               letter-spacing: -0.32px;
             }
             &.gray {
               color: #222;
+              font-weight: 400;
               background-color: #eee;
             }
             &.green {
               color: #fff;
               background-color: #25bcb3;
+              font-weight: 700;
             }
             &.dim {
               color: #fff;

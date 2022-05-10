@@ -139,6 +139,7 @@ const Edit = () => {
             <h2>제목</h2>
             <textarea
               className="title"
+              placeholder="제목을 입력하세요"
               defaultValue={infoText.title}></textarea>
           </li>
           <li>
@@ -147,6 +148,7 @@ const Edit = () => {
             </h2>
             <textarea
               className="descript"
+              placeholder="부가설명을 입력하세요"
               defaultValue={infoText.descript}></textarea>
           </li>
           <li>
@@ -165,7 +167,11 @@ const Edit = () => {
                     <h3>사진</h3>
                     <button className="checkbox active">체크박스</button>
                   </div>
-                  <input type="text" defaultValue="사진보기" />
+                  <input
+                    type="text"
+                    placeholder="제목을 입력하세요"
+                    defaultValue="사진보기"
+                  />
                   <div className="file_load_wrap">
                     <label className="file_load">
                       불러오기({imgFiles.length}/10)
@@ -188,7 +194,11 @@ const Edit = () => {
                     <h3>위치(지도)</h3>
                     <button className="checkbox active">체크박스</button>
                   </div>
-                  <input type="text" defaultValue="위치보기" />
+                  <input
+                    type="text"
+                    placeholder="제목을 입력하세요"
+                    defaultValue="위치보기"
+                  />
                   <input
                     type="text"
                     placeholder="네이버지도 링크주소를 입력하세요"

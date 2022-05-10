@@ -11,7 +11,11 @@ const EditList = ({ category }) => {
             <button className="checkbox active">체크박스</button>
             {/* 활성화:active, 비활성화:active 제거 */}
           </div>
-          <input type="text" defaultValue="전화걸기" />
+          <input
+            type="text"
+            placeholder="제목을 입력하세요"
+            defaultValue="전화걸기"
+          />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -32,7 +36,11 @@ const EditList = ({ category }) => {
             <button className="checkbox active">체크박스</button>
             {/* 활성화:active, 비활성화:active 제거 */}
           </div>
-          <input type="text" defaultValue="이메일 보내기" />
+          <input
+            type="text"
+            placeholder="제목을 입력하세요"
+            defaultValue="이메일 보내기"
+          />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -51,7 +59,11 @@ const EditList = ({ category }) => {
             <button className="checkbox active">체크박스</button>
             {/* 활성화:active, 비활성화:active 제거 */}
           </div>
-          <input type="text" defaultValue="홈페이지" />
+          <input
+            type="text"
+            placeholder="제목을 입력하세요"
+            defaultValue="홈페이지"
+          />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -78,7 +90,11 @@ const EditList = ({ category }) => {
             <button className="checkbox active">체크박스</button>
             {/* 활성화:active, 비활성화:active 제거 */}
           </div>
-          <input type="text" defaultValue="앱 다운로드" />
+          <input
+            type="text"
+            placeholder="제목을 입력하세요"
+            defaultValue="앱 다운로드"
+          />
           <div className="list_wrap">
             <div className="icon_wrap">
               <button className="btn_edit">수정</button>
@@ -99,7 +115,11 @@ const EditList = ({ category }) => {
               <button className="checkbox active">체크박스</button>
               {/* 활성화:active, 비활성화:active 제거 */}
             </div>
-            <input type="text" defaultValue="SNS 구경하기" />
+            <input
+              type="text"
+              placeholder="제목을 입력하세요"
+              defaultValue="SNS 구경하기"
+            />
             <div className="list_wrap">
               <div className="icon_wrap">
                 <button className="btn_edit">수정</button>
