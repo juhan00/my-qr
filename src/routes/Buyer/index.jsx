@@ -5,7 +5,7 @@ import myqr from "@images/ic_myqr.png";
 import imgQr from "@images/img_qr.png";
 
 const initialMyqrData = {
-  location: "my-qr.kr/sonjoon82",
+  location: "sonjoon82",
   qrHome: {
     title: "안녕하세요 전화주시면 바로 연락 드리겠...",
     descript:
@@ -41,7 +41,9 @@ const Buyer = () => {
           <button>버튼</button>
           <div className="content_wrap">
             <h2>QR-home 주소</h2>
-            <p>{myqrData.location}</p>
+            <p>
+              my-qr.kr/<span>{myqrData.location}</span>
+            </p>
             <button>주소복사</button>
           </div>
         </section>
@@ -49,7 +51,7 @@ const Buyer = () => {
         <section className="qr_setting">
           <h2>QR-home 관리</h2>
           <p>{myqrData.qrHome.title}</p>
-          <p>{myqrData.qrHome.descript}</p>
+          <p dangerouslySetInnerHTML={{ __html: myqrData.qrHome.descript }}></p>
           <button>내용수정</button>
         </section>
 

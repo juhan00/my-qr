@@ -155,7 +155,7 @@ const Main = () => {
                 ) : (
                   <div className="default">
                     <div className="text">
-                      <h2>지도를　표시할 수 없습니다</h2>
+                      <h2>지도를 표시할 수 없습니다</h2>
                       <p>
                         네트워크가 불안정하거나 <br />
                         링크가 잘못되었을 수 있습니다

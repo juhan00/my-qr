@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 import btnOrder from "@images/btn_order.png";
 
 export const OrderStyle = styled.div`
-  padding: 0 30px 0 27px;
   & > ul {
+    padding: 0 30px 0 27px;
     margin-top: 37px;
     & > li {
       display: flex;

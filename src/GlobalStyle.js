@@ -54,11 +54,12 @@ const GlobalStyle = () => {
         }
         textarea {
           resize: none;
+          outline-color: #000;
+          &::placeholder {
+            color: #ccc;
+          }
         }
-        textarea::placeholder,
-        input::placeholder {
-          color: #ccc;
-        }
+
         input {
           width: 100%;
           height: 50px;
@@ -67,7 +68,12 @@ const GlobalStyle = () => {
           font-size: 15px;
           color: #000;
           padding: 0 14px;
+          outline-color: #000;
+          &::placeholder {
+            color: #ccc;
+          }
         }
+
         .checkbox {
           width: 20px;
           height: 20px;

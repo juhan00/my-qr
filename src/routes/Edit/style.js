@@ -10,13 +10,14 @@ export const EditStyle = styled.div`
       button {
         width: 120px;
         height: 40px;
-        background-color: #ececec;
+        background-color: #ccc;
         border: 0px;
         border-radius: 20px;
         font-size: 14px;
-        color: #000;
+        color: #fff;
         &.active {
           color: #fff;
+          font-weight: 700;
           background-color: #25bcb3;
         }
       }
@@ -77,10 +78,12 @@ export const EditStyle = styled.div`
             font-size: 30px;
             line-height: 1.33;
             letter-spacing: -0.9px;
+            word-spacing: -0.5rem;
           }
           &.descript {
             font-size: 14px;
             line-height: 1.51;
+            word-spacing: -0.2rem;
           }
         }
 
@@ -181,8 +184,7 @@ export const EditStyle = styled.div`
     &.fixed {
       z-index: 999;
       position: fixed;
-      width: inherit;
-      max-width: inherit;
+      width: 100%;
       bottom: 0px;
     }
   }

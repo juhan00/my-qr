@@ -59,11 +59,16 @@ export const BuyerStyle = styled.div`
         & > p {
           margin-top: 19px;
           font-size: 20px;
-          font-weight: 700;
           color: #fff;
+          & > span {
+            font-weight: 700;
+          }
         }
         & > button {
-          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px auto 0;
           padding: 5px 15px;
           height: 20px;
           border-radius: 10px;
@@ -105,8 +110,10 @@ export const BuyerStyle = styled.div`
         text-align: left;
       }
       & > button {
-        margin-top: 25px;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto 0;
         height: 20px;
         padding: 5px 15px;
         border-radius: 10px;
@@ -199,7 +206,7 @@ export const BuyerStyle = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 100px 53px;
+    padding: 100px 0;
     & > ul {
       display: flex;
       align-items: center;

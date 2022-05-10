@@ -52,7 +52,7 @@ export const MainStyle = styled.div`
       padding: 0 30px 130px;
       & > li {
         padding: 35px 9px;
-        border-top: 1px dashed #4e4e4e;
+        border-top: 1px dashed #ddd;
 
         & > h2 {
           padding-left: 2px;
@@ -65,7 +65,7 @@ export const MainStyle = styled.div`
         }
 
         &:last-of-type {
-          border-bottom: 1px dashed #4e4e4e;
+          border-bottom: 1px dashed #ddd;
         }
 
         & > .location {
@@ -77,7 +77,8 @@ export const MainStyle = styled.div`
           }
           button {
             margin-left: auto;
-            width: 30px;
+            padding: 0 10px;
+            min-width: 30px;
             height: 15px;
             border-radius: 15px;
             background-color: #4e4e4e;
@@ -189,7 +190,6 @@ export const MainStyle = styled.div`
     }
     & > img {
       width: 100%;
-      height: 518px;
     }
   }
 `;
