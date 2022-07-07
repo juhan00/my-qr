@@ -7,7 +7,7 @@ const Intro = () => {
     <IntroStyle>
       <ul>
         <li>
-          <NavLink to="/main">메인화면</NavLink>
+          <NavLink to="/main">메인화면테스트</NavLink>
         </li>
         <li>
           <NavLink to="/edit">QR정보 등록</NavLink>
